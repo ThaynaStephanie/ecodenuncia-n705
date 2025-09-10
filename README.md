@@ -63,12 +63,12 @@ A arquitetura proposta será baseada em um modelo cliente-servidor, com uma API 
     *   Não relacional (MongoDB) para armazenamento de metadados de imagens ou logs (opcional).
 
 ```mermaid
-graph TD
-    A[Usuário Mobile] -->|Requisição HTTP/S| B(API RESTful)
-    C[Gestor Web] -->|Requisição HTTP/S| B
-    B -->|Consulta/Grava| D[Banco de Dados (PostgreSQL)]
-    B -->|Upload/Download| E[Serviço de Armazenamento de Imagens (AWS S3)]
-    B -->|Geocodificação/Mapas| F[Serviço de Mapas (Google Maps API)]
+graph TD;
+    A[Usuário Mobile] --> B[API RESTful];
+    C[Gestor Web] --> B;
+    B --> D[Banco de Dados (PostgreSQL)];
+    B --> E[Serviço de Armazenamento de Imagens (AWS S3)];
+    B --> F[Serviço de Mapas (Google Maps API)];
 ```
 ## Lista de Tecnologias Propostas
 
