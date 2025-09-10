@@ -25,7 +25,7 @@ erDiagram
         VARCHAR nome
         VARCHAR email UK
         VARCHAR senha_hash
-        VARCHAR tipo_usuario ENUM("cidadao", "gestor")
+        VARCHAR tipo_usuario "ENUM('cidadao', 'gestor')"
         TIMESTAMP data_cadastro
     }
 
@@ -46,7 +46,7 @@ erDiagram
         INT id PK
         VARCHAR nome_status UK
     }
-
+```
 ## Dicionário de Dados
 
 ### Tabela: Usuário
