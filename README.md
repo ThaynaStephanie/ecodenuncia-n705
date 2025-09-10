@@ -62,14 +62,14 @@ A arquitetura proposta será baseada em um modelo cliente-servidor, com uma API 
     *   Relacional (PostgreSQL/MySQL) para dados estruturados (usuários, denúncias, status).
     *   Não relacional (MongoDB) para armazenamento de metadados de imagens ou logs (opcional).
 
-´´´´mermaid
+```mermaid
 graph TD
     A[Usuário Mobile] -->|Requisição HTTP/S| B(API RESTful)
     C[Gestor Web] -->|Requisição HTTP/S| B
     B -->|Consulta/Grava| D[Banco de Dados (PostgreSQL)]
     B -->|Upload/Download| E[Serviço de Armazenamento de Imagens (AWS S3)]
     B -->|Geocodificação/Mapas| F[Serviço de Mapas (Google Maps API)]
-
+```
 ## Lista de Tecnologias Propostas
 
 *   **Frontend Mobile:** React Native ou Flutter (para desenvolvimento multiplataforma eficiente).
