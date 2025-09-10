@@ -49,8 +49,8 @@ A arquitetura do EcoDenúncia será baseada em um modelo de microsserviços (ou 
 graph TD
 
     subgraph Frontend
-        A[Mobile App (React Native/Flutter)]
-        B[Web Dashboard (React.js/Vue.js)]
+        A["Mobile App (React Native/Flutter)"]
+        B["Web Dashboard (React.js/Vue.js)"]
     end
 
     subgraph Backend (Node.js/Express.js)
