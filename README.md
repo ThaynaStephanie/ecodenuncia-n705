@@ -66,9 +66,9 @@ A arquitetura proposta será baseada em um modelo cliente-servidor, com uma API 
 graph TD;
     A[Usuário Mobile] --> B[API RESTful];
     C[Gestor Web] --> B;
-    B --> D[Banco de Dados (PostgreSQL)];
-    B --> E[Serviço de Armazenamento de Imagens (AWS S3)];
-    B --> F[Serviço de Mapas (Google Maps API)];
+    B --> D["Banco de Dados (PostgreSQL)"];
+    B --> E["Serviço de Armazenamento de Imagens (AWS S3)"];
+    B --> F["Serviço de Mapas (Google Maps API)"];
 ```
 ## Lista de Tecnologias Propostas
 
