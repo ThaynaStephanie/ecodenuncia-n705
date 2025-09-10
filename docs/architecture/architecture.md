@@ -53,7 +53,7 @@ graph TD
         B["Web Dashboard (React.js/Vue.js)"]
     end
 
-    subgraph Backend (Node.js/Express.js)
+    subgraph "Backend (Node.js/Express.js)"
         C(API Gateway)
         D(Serviço de Autenticação)
         E(Serviço de Usuários)
@@ -61,23 +61,23 @@ graph TD
         G(Serviço de Upload de Arquivos)
     end
 
-    subgraph Data Layer
+    subgraph "Data Layer"
         H[PostgreSQL Database]
-        I[AWS S3 / Cloudinary]
+        I["AWS S3 / Cloudinary"]
     end
 
-    subgraph External Services
-        J[Google Maps API / Mapbox]
+    subgraph "External Services"
+        J["Google Maps API / Mapbox"]
     end
 
-    A -- HTTP/S Requests --> C
-    B -- HTTP/S Requests --> C
+    A -- "HTTP/S Requests" --> C
+    B -- "HTTP/S Requests" --> C
 
     C -- Calls --> D
     C -- Calls --> E
     C -- Calls --> F
     C -- Calls --> G
 
-    F -- Reads/Writes --> H
-    G -- Stores/Retrieves --> I
+    F -- "Reads/Writes" --> H
+    G -- "Stores/Retrieves" --> I
     F -- Uses --> J
